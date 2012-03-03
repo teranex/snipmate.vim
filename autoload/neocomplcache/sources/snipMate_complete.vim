@@ -25,7 +25,7 @@ function! s:source.get_keyword_list(cur_keyword_str)
     endif
 
     let l:abbr_pattern = printf('%%.%ds..%%s', g:neocomplcache_max_keyword_width-10)
-    let l:menu_pattern = '<S> %.'.g:neocomplcache_max_filename_width.'s'
+    let l:menu_pattern = '<S> %.'.g:neocomplcache_max_menu_width.'s'
 
     let list = []
     for trig in keys(snips)
